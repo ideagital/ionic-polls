@@ -4,7 +4,7 @@ import Pusher from 'pusher-js';
 @Injectable()
 export class PusherProvider {
   constructor() {
-    const pusher = new Pusher('c9a2c26916292f22323a', {
+    const pusher = new Pusher('PUSHER_KEY', {
       cluster: 'ap1',
     });
     this.channel = pusher.subscribe('vote-channel');
